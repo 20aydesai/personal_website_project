@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website - Home</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="work.html">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content Section -->
+  <h1>Welcome to my website!</h1>
+
+  <div class="flex-container">
+    <div><img src="photo_2024-02-07_19-58-34.jpg" align = "right" hspace="40" vspace="0" width="2000" height="3000" alt="Home Image" class="img-fluid"></div>
+    <div>
+      <p>
+        Welcome to my website! My name is Ayan Desai and my major is Cybersecurity at Kean University in NJ. Here, I aim to share my passions, experiences, and insights with you.
+        <br>
+        As an avid enthusiast of technology and innovation, I constantly find myself exploring the latest advancements in the digital world. From coding intricate algorithms to designing intuitive user interfaces, I thrive on the creative challenges that the realm of web development presents. Beyond the screen, I'm an ardent nature lover. Whether it's embarking on exhilarating hikes through rugged terrains or simply unwinding amidst serene landscapes, I find solace and inspiration in the great outdoors. Through this platform, I aspire to blend my technological expertise with my reverence for nature, offering you a glimpse into my multifaceted journey. Join me as we traverse the realms of technology, creativity, and exploration together!
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer bg-dark text-white text-center">
+    <div class="container">
+      <span>&copy; 2024 My Website</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript Functions -->
+  <script>
+    // Function to change the text color of the header
+    function changeHeaderColor() {
+      var header = document.querySelector('h1');
+      header.style.color = 'blue';
+    }
+
+    // Function to show a message when the button is clicked
+    function showMessage() {
+      alert('Button clicked!');
+    }
+
+    // Function to calculate the square of a number
+    function square(number) {
+      return number * number;
+    }
+
+    // Example usage of the square function
+    var result = square(5);
+    console.log('Square of 5:', result);
+
+    // Call changeHeaderColor function when page loads
+    window.onload = function() {
+      changeHeaderColor();
+    };
+  </script>
+</body>
+</html>
